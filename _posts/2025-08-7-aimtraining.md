@@ -1,6 +1,5 @@
 ---
-layout: post
-author: akmal
+layout: splash
 ---
 AIm training is cool
 
