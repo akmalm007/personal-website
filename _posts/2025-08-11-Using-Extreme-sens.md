@@ -1,5 +1,11 @@
 ---
-layout: posts
+layout: single
+category: Article
+tags: aimtraining aimlab
+header:
+    image: /assets/images/ferrari.webp
+    teaser: assets/images/ferrari.webp
+    excerpt: "My Porsche arrive"
 ---
 Selama seminggu kemarin Aim Training yang kulakukan mengarah ke explorasi skenario yang ada di Voltaic seperti Tracking dan Flicking lalu ketemu beberapa skenario yang pernah dimainin 6 bulan sampai 1 tahun yang lalu dan ada Personal Best yang masih bertahan sampai sekarang, dan aku selalu bertanya "How the heck you do it Mal?", selepas itu lihat Twitter dan ketemu tweet @Matty_OW karena penasaran coba lihat channel Youtubenya dan kebanyakan videonya adalah VOD setiap skenario dengan score tertinggi dan satu video menarik perhatian ku dengan judul "How to build Aim Training Routine" topik yang sebenarnya aku ketahui dan ingin coba buat sendiri rutin ku namun aku enggan karena ku yakin usaha yang diperlukan itu besar.
 

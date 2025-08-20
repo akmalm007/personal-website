@@ -1,5 +1,7 @@
 ---
 layout: single
+category: Logs
+tags: neovim lsp linux
 ---
 Perlu 3 hari buat reconfigure nvimrc ku dari awal setelah satu setengah tahun tidak di update. Jarang ku update karena masih bagus dan bisa dipakai buat ngerjain skripsi, akhir akhir ini kerjain project baru dan ada behavior yang aneh karena penasaran kucoba investigasi. 
 

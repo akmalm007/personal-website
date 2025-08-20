@@ -3,8 +3,10 @@ main:
   - title: "Posts"
     url: /posts/
   - title: "Index"
-    url: /tags/
-  - title: "Projects"
-    url: /project/
+    url: /archives/
+  - title: "Portfolio"
+    url: /portfolio/
+  # - title: "Record"
+  #   url: /record/
   - title: "About"
     url: /about/

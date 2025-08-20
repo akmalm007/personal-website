@@ -258,6 +258,9 @@ pagination:
     before: 2
     after: 2
 
+collections:
+  portfolio:
+    output: true
 
 # Plugins (previously gems:)
 plugins:
@@ -322,8 +325,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
       related: true
+      toc: true
