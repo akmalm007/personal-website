@@ -24,7 +24,7 @@ name                     : "Akmal Maulana"
 description              : "Personal Website for blogpost, article, and portfolio with topics likes Technology, Gaming, Self Developmetn and Writing"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "akmalm007"
+repository               : "akmalm007/personal-website"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Akmal Maulana"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Engineer, Gamer, Writer, and forever student"
+  avatar           : "/assets/images/bio/dumellya.jpg"
+  bio              : "Student, Engineer, Writer, Gamer"
   location         : "Indonesia"
   email            : "akmalmaulana915@gmail.com"
   links:
@@ -124,19 +124,25 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      # url: "https://akmal-maulana.my.id"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+    - label: "Linkedin"
+      icon: "fa-brands fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/akmal-maulana/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/akmalm_007/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/akmal.maulana.50702769"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/akmalm007"
+    - label: "Steam"
+      icon: "fa-brands fa-steam"
+      url: "https://steamcommunity.com/profiles/76561198281830301/"
 
 # Site Footer
 footer:
@@ -146,10 +152,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/akmal.maulana.50702769"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/akmalm007"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -159,7 +165,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2025"
 
 
 # Reading Files
@@ -229,8 +235,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: date
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+date_format: "%d %B %Y"
 
 
 # Pagination with jekyll-paginate
@@ -291,10 +298,10 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
@@ -331,3 +338,4 @@ defaults:
       share: true
       related: true
       toc: true
+      show_date: "%d %B %Y"
