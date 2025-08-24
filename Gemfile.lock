@@ -162,7 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-archives
+  jekyll-archives (>= 2.2.1)
   jekyll-feed
   jekyll-include-cache
   jekyll-last-modified (>= 1.0.3)
