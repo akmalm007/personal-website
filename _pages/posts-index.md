@@ -2,10 +2,8 @@
 title: Posts Index
 layout: categories
 permalink: /posts/
-tagline: Posted by bla bla
 classes: wide
 entries_layout: grid
-tagline: This is my home
 header:
     overlay_color: "#435585"
 ---

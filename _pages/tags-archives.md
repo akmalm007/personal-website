@@ -1,5 +1,5 @@
 ---
-title: Category by Tags
+title: Filter by Tags
 layout: tags
 permalink: /tags/
 header:
@@ -7,4 +7,7 @@ header:
     # actions:
     #     - label: "Filter by Tag"
     #       url: "/tags/"
+    actions:
+        - label: "Category by Year"
+          url: "/archives/"
 ---

@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akmal Maulana"
 description              : "Personal Website for blogpost, article, and portfolio with topics likes Technology, Gaming, Self Developmetn and Writing"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://akmal-maulana.my.id"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "akmalm007/personal-website"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Akmal Maulana"
-  avatar           : "/assets/images/bio/dumellya.jpg"
+  avatar           : "/assets/images/bio/bio-photo.png"
   bio              : "Student, Engineer, Writer, Gamer"
   location         : "Indonesia"
   email            : "akmalmaulana915@gmail.com"
@@ -124,16 +124,16 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://akmal-maulana.my.id"
+      url: "https://akmal-maulana.my.id"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Linkedin"
       icon: "fa-brands fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/akmal-maulana/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/akmalm_007/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://www.instagram.com/akmalm_007/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/akmal.maulana.50702769"
@@ -236,7 +236,7 @@ sass:
 
 # Outputting
 permalink: date
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Jakarta
 date_format: "%d %B %Y"
 
 
@@ -338,4 +338,5 @@ defaults:
       share: true
       related: true
       toc: true
+      toc_sticky: true
       show_date: "%d %B %Y"
