@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'minimal-mistakes-jekyll'
 gem "kramdown", '>= 2.3.0' # buat markdown
+gem "rake"
 gem "rouge", '~> 4.0' # Syntax highlihgt di page
 
 group :jekyll_plugins do

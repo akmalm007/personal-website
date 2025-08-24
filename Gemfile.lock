@@ -172,6 +172,7 @@ DEPENDENCIES
   jekyll-tidy
   kramdown (>= 2.3.0)
   minimal-mistakes-jekyll
+  rake
   rouge (~> 4.0)
 
 BUNDLED WITH
