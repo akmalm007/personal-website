@@ -14,7 +14,7 @@ group :jekyll_plugins do
   gem "jekyll-feed" # RSS Feed
   gem "jekyll-tidy" # Buat HTML Compress
   gem 'jekyll-mentions', '~> 1.6' # Belum tahu gunanay apa
-  gem "jekyll-last-modified", '>= 1.0.3'
+  # gem "jekyll-last-modified", '>= 1.0.3'
   gem 'jekyll-archives', '>= 2.2.1' # Archive Taxonomy
   # gem "jekyll-algolia" # Search option 3rd party 
   # gem "jekyll-paginate-v2", '>= 3.0.0'
