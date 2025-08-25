@@ -61,8 +61,8 @@ maka email akan menjadi alat komunikasi yang efektif untuk terhubung denganku.
 
 - **Email**: akmalmaulana915@gmail.com
 
-Aku juga memiliki akun di beberapa media sosial bisa dicek sebelah kiri profile, tapi aku sudah 
-jarang memakai media sosial dan komunikasi lewat email lebih disarankan.
+Aku memiliki akun di beberapa media sosial, tapi sudah 
+jarang memakainya dan komunikasi lewat email lebih disarankan.
 {: style="text-align: justify;"}
 
 Saat ini aku lebih senang eksplorasi blog seseorang dan subcribe lewat RSS dan jika kamu tertarik dengan 
