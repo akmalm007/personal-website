@@ -88,6 +88,15 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
+# Feed realted
+feed:
+  categories:
+    - Blog
+    - Article 
+  tags:
+    only:
+    - linkedin
+
 # Social Sharing
 twitter:
   username               :
