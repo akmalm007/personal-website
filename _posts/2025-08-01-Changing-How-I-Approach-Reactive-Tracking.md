@@ -1,6 +1,6 @@
 ---
 layout: single
-category: Blog
+category: blog
 tags: aimtraining hobby aimlab
 ---
 Sesi ini berfokus ke Reactive Tracking dengan Task berisi Bot yang bergerak cepat dan unpredictable, Fokus ku kali ini ingin coba pake Wrist dan Forearm Aiming karena sudah biasa pake Wrist dan Finger. 

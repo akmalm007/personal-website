@@ -1,6 +1,6 @@
 ---
 layout: single
-category: Blog
+category: blog
 tags: aimtraining aimlab selfdevelopment
 ---
 1. Persistent, Deliberate Practice adalah lone pursuit maka sumber motivasi ku hanyalah dalam diriku sendiri untuk itu aku bisa menemukan makna dari latihan ku dan aku udah achieve. 
