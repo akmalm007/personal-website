@@ -1,6 +1,6 @@
 ---
 layout: single
-category: Blog
+category: blog
 tags: writing blogging freedom
 ---
 Dulu semenjak sekolah aku jarang membagikan jawaban ku kepada teman teman karena aku ingin lihat mereka berjuang 

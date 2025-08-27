@@ -91,17 +91,20 @@ baidu_site_verification  :
 # Feed realted
 feed:
   categories:
-    - Blog
-    - Article 
+    - blog
+    - article 
+  # tags:
+  #   only:
+  #   - share
 
 # Social Sharing
 twitter:
   username               :
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username               : "akmal.maulana.50702769"
+  app_id                 : "1548205553190973"
+  publisher              : "1548205553190973"
+og_image                 : /assets/logo.svg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

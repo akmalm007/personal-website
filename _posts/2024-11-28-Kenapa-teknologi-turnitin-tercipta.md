@@ -1,6 +1,6 @@
 ---
 layout: single
-category: Article
+category: article
 tags: publikasi ide
 ---
 # Objek yang diteliti akan tetap sama

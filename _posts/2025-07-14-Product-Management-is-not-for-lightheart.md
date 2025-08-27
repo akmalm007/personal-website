@@ -1,6 +1,6 @@
 ---
 layout: single
-category: Blog
+category: blog
 tags: story productmanagement 
 ---
 
