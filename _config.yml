@@ -93,9 +93,6 @@ feed:
   categories:
     - Blog
     - Article 
-  tags:
-    only:
-    - linkedin
 
 # Social Sharing
 twitter:
