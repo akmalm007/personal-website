@@ -88,7 +88,7 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Feed realted
+# Feed related
 feed:
   categories:
     - blog
@@ -99,7 +99,7 @@ feed:
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "ProtoAkmal"
 facebook:
   username               : "akmal.maulana.50702769"
   app_id                 : "1548205553190973"
