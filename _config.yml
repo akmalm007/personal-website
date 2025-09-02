@@ -93,9 +93,9 @@ feed:
   categories:
     - blog
     - article 
-  # tags:
-  #   only:
-  #   - share
+  tags:
+    only:
+    - daily
 
 # Social Sharing
 twitter:
