@@ -21,7 +21,7 @@ title                    : "Akmal Maulana"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akmal Maulana"
-description              : "Personal Website for blogpost, article, and portfolio with topics likes Technology, Gaming, Self Developmetn and Writing"
+description              : "Personal Website for showcasing my writing and project"
 url                      : "https://akmal-maulana.my.id"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "akmalm007/personal-website"
@@ -93,9 +93,9 @@ feed:
   categories:
     - blog
     - article 
-  tags:
-    only:
-    - daily
+  # tags:
+  #   only:
+  #   - daily
 
 # Social Sharing
 twitter:
@@ -277,6 +277,7 @@ pagination:
 collections:
   portfolio:
     output: true
+    permalink: /:collection/:path/
 
 # Plugins (previously gems:)
 plugins:
@@ -349,3 +350,13 @@ defaults:
       toc: true
       toc_sticky: true
       show_date: "%d %B %Y"
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      toc: true
+      toc_sticky: true
