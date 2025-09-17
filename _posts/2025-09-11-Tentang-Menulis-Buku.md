@@ -1,5 +1,5 @@
 --- 
-date: 2025-09-11 
+date: 2025-09-17 
 title: "Tentang Menulis Buku"
 category: blog
 tags: buku writing hobby project
