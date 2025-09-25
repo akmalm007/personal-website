@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Personal Website"
 excerpt: "Dokumentasi, Keputusan Teknikal, dan Post Morterm dalam pengerjaan proyek Personal Website"
 header:
@@ -15,43 +16,43 @@ Selama riset banyak teman teman yang kulihat menggunakan portfolio website, mere
 
 Pilihan kedua adalah blogging website, blogging website bebas dalam menampilkan konten dan memilih tema tertentu seperti teknologi, memasak, dan olahraga dengan ini blogging terasa personal karena memiliki kebebasan dalam publikasi konten. Kekurangannya adalah blogging website konten didalamnya bersifat dinamis maka pengunjung tahu mana website blogging yang masih aktif dan yang sudah ditinggalkan [^blog-portfolio-website]. 
 
-Dari portfolio dan blogging website aku memilih blogging karena kebebasan dalam mengatur konten didalamnya serta lebih personal dibandingkan portfolio, alasan kedua portfolio itu *[cherrypicking](https://www.merriam-webster.com/dictionary/cherry-pick)* konten yang ada didalamnya dipilih dari prestasi, pekerjaan, skills, serta project untuk ditampilkan sedangkan bloggin seseorang bebas menulis dan publikasikan karyanya dan pengunjung bebas memilih tulisan apa yang menarik untuk dibaca[^memex-method]. 
+Dari portfolio dan blogging aku memilih blogging karena kebebasan dalam mengatur konten didalamnya serta lebih personal dibandingkan portfolio, alasan kedua portfolio itu *[cherrypicking](https://www.merriam-webster.com/dictionary/cherry-pick)* konten yang ada didalamnya dipilih dari prestasi, pekerjaan, skills, serta project yang ingin ditampilkan sedangkan blogging seseorang bebas menulis dan publikasikan karyanya[^memex-method]. 
 
-Terakhir adalah domain name, menurutku ada nilai unik untuk memiliki domain name pribadi karena ketika domain name sudah diambil orang lain tidak bisa mengambilnya lalu dalam platform media sosial akan aneh untuk memanggil atau memperkenalkan diri kepada seseorang dengan username di medial sosial dengan itu aku memiliki pendapat bahwa semua orang bisa punya akun di media sosial tapi tidak semua memiliki domain name yang bisa dicari di internet[^internet]. 
+Terakhir adalah domain name, menurutku ada nilai unik untuk memiliki domain name pribadi karena ketika domain name sudah diambil orang lain tidak bisa mengambilnya lalu dalam platform media sosial akan aneh untuk memanggil seseorang dengan usernamenya. Dengan itu aku memiliki pendapat bahwa semua orang bisa punya akun di media sosial tapi tidak semua memiliki domain name yang bisa dicari di internet[^internet]. 
 
-[^blog-portfolio-website]: Referensei di ambil dari [GeeksforGeeks](https://www.geeksforgeeks.org/websites-apps/blog-vs-portfolio-choosing-the-right-website-format-for-you/)
+[^blog-portfolio-website]: Referensi kedua paragraf diambil dari Geeks for geeks https://www.geeksforgeeks.org/websites-apps/blog-vs-portfolio-choosing-the-right-website-format-for-you/.
 
-[^memex-method]: Tujuan ku blogging akhirnya terungkap bukan untuk 'Personal Branding" tapi sebagai tempat untuk mengetahui tulisnku akan membawa ku kemana sekalipun belum ada ide untuk menulis buku, artikel[blog ini](https://pluralistic.net/2021/05/09/the-memex-method/#:~:text=BE%20THE%20FIRST%20PERSON%20TO%20NOT%20DO%20WHAT%20NO%20PERSON%20HAS%20NOT%20DONE%C2%A0BEFORE)
+[^memex-method]: Tujuan ku blogging bukanlah untuk ['Personal Branding'](https://freedium.cfd/https://medium.com/bouncin-and-behavin-blogs/personal-branding-is-bullshit-and-how-not-to-get-castrated-by-conformity-84634b5191d8) tapi sebagai tempat yang bisa membawa ku kepada tulisan dan project berikutnya https://pluralistic.net/2021/05/09/the-memex-method/
 
 [^internet]: Paragraf terakhir adalah pendapat pribadi yang mencintai kebebasan tanpa belenggu dari platform manapun. Bisa cek pendapat pribadi ku di [blog sebelumnya]({% post_url 2025-08-25-Today-i-start-blogging %}).
 
 # Teknikal Desain
-Dalam membuat blogging website ada dua pendekatan dinamis dengan Content Management System (CMS) seperti Wordpress atau Blogger dan Framework MVC seperti Laravel atau Django lalu alternatif lain adalah menggunakan Static Site Generator (SSG). Static Site Generator bekerja dengan membuat konten tulisan seperti blogpost, artikel dan dokumentasi yang telah distruktur dengan HTML atau Markdown lalu diolah untuk bisa dibaca oleh browser[^ssg] .
+Dalam membuat blogging website bisa menggunakan Content Management System (CMS) seperti Wordpress, lalu membuat nya dengan framework seperti Laravel dan terakhir dengan Static Site Generator (SSG). Static Site Generator bekerja dengan membuat konten tulisan seperti blogpost dan artikel yang telah dibuat dengan HTML atau Markdown untuk diolah agar terbaca oleh browser[^ssg] .
 
-Dalam kasusku personal website tidak perlu menyimpan data di dalam basis data, kemudian tidak ada logika bisnis yang perlu dilakukan di dalam server, dan terakhir setiap halaman yang dibuat berbentuk markdown atau HTML yang bisa dipakai dimana mana. dengan itu SSG cocok untuk penggunaan ku dalam membuat personal website karena tidak ada biaya untuk mengolah server lalu mudah membuat antarmuka dan desain dengan template dan tema yang tersedia.
+Dalam kasusku personal website tidak perlu menyimpan data, kemudian tidak ada logika bisnis, terakhir setiap halaman yang dibuat berbentuk markdown atau HTML. Dengan ini SSG cocok untuk kasus ku karena tidak ada biaya sewa server lalu untuk desain website bisa menggunakan tema yang telah dibuat oleh komunitas.
 
-Static Site Generator yang kugunakan adalah Jekyll[^jekyll], Jekyll memiliki fitur templating untuk membuat halaman, memiliki banyak pluggin, dan didalamnya sudah ada fitur untuk blogging sepeti categories, tags, permalink sehingga akan mudah untuk mencari dan arsipkan tulisan lalu proses *deployment* mudah dengan menggunakan Github-Pages dan Netlify ketika website sudah siap untuk dipublikasikan.
+Static Site Generator yang kupakai adalah Jekyll[^jekyll], Jekyll memiliki fitur templating untuk membuat halaman, memiliki banyak pluggin, dan didalamnya sudah ada fitur yang ditunjukkan untuk blogging sepeti categories, tags, permalink. Terakhir adalah proses *deployment* mudah dengan Github-Pages dan Netlify ketika website sudah siap untuk dipublikasikan.
 
 ## Struktur Halaman
-Dengan Static Site Generator membuat halaman dan navigasi mudah untuk dilakukan, dengan itu aku perlu membuat struktur dan menentukan fungsi setiap halaman di dalam personal website.
+Berikutnya adalah menentukan struktur halaman berserta fungsinya. 
 
-* Home: Halaman home akan ada perkenalan tentang website untuk apa dan siapa yang membuatnya, dalam kasusku aku menjelaskan bahwa aku adalah **penulis** karena semua tulisan yang ada di dalam adalah buatanku dan **maintainer** yaitu seseorang yang menjaga dan mempelihara website karena personal website ini sebagai tempat ku berkreasi maka aku punya tanggung jawab untuk selalu update dan menambah konten didalamnnya.
+* Home: Halaman home memperkenalkan website ini apa dan siapa yang membuatnya, pada halaman home aku deskripsikan sebagai **penulis** karena semua tulisan yang ada di dalamnya adalah buatanku dan **maintainer** karena personal website ini sebagai tempat ku berkreasi maka aku punya tanggung jawab untuk selalu update dan menambah konten didalamnnya.
 
-* Index: Halaman Index memiliki banyak penamaan lain seperti Article, Blogs, Posts, Essay dan Archive semua memiliki arti yang sama yaitu daftar dari konten yang ada didalam website biasanya adalah tulisan atau galeri, aku memebdakan post ku menjadi tiga kategori yaitu Blog, Artikel, dan Log. Masing Masing memiliki fungsi yaitu:
+* Index: Halaman Index memiliki banyak penamaan seperti Article, Blogs, Posts, Essay dan Archive semua memiliki tujuan yang sama yaitu daftar dari konten yang ada didalam website. aku membedakan post ku menjadi tiga kategori yaitu Blog, Artikel, dan Log. Masing Masing memiliki fungsi yaitu:
 
     * Blog 
-    :   sebagai tulisan tentang pengalaman ku dalam sehari hari ataupun topik yang ingin ku angkat, biasanya bersifat pesonel dan banyak opini pribadinya
+    :   Tulisan tentang pengalaman ku dalam sehari hari ataupun topik yang ingin ku angkat, biasanya bersifat personal dan opini pribadi.
 
     * Artikel
-    :   Tulisan yang panjang, luas, dan mendalam untuk membahas sebuah topik didalamanya terkadang ada fitur *Table of Content* untuk memudahkan pengunjung untuk navigasi tulisan.
+    :   Tulisan yang panjang, luas, dan mendalam untuk membahas sebuah topik.
 
     * Log
-    :   Log dalam ilmu komputer adalah proses yang tercatat di dalam sistem, Log untukku sebagai tempat buat menulis kegiatan yang sudah aku lakukan dan melihat kembali apa yang sudah kukerjakan seperti memoar[^memoar].
+    :   Log dalam ilmu komputer adalah proses yang tercatat di dalam sistem, Log untukku sebagai tempat buat menulis kegiatan yang sudah aku lakukan dan melihat kembali apa yang sudah kukerjakan mirip dengan memoar[^memoar].
 
-* Portfolio: Halaman ini menampilkan project yang telah dikerjakan sebelumnya dan pendekatan ku untuk portoflio adalah Dokumentasi. Seperti di awal paragraf pekerjaan tidak bisa bebicara dan hanya menampilkan tujuan dan fungsi utama aku rasa belum cukup jadi menurutku lebih bagus dengan membuatnya sebagai dokumentasi sehingga orang yang membacanya tahu kenapa project ini berharga bagi pembuatnya. 
+* Portfolio: Halaman ini menampilkan project yang telah dikerjakan dan portfolio akan berisi dokumentasi karena pekerjaan tidak bisa bebicara dan hanya menampilkan tujuan serta fungsi utama aku rasa belum cukup jadi menurutku lebih bagus dengan membuatnya sebagai dokumentasi sehingga pembaca tahu fungsi dan tujuan dari project yang dibuat.
 
-* About: Halaman ini menjelaskan siapa diri kita, ada banyak cara yang bisa dilakukan seperti menjelaskan pekerjaan yang dilakukan sekarang, motivasi dalam melakukan pekerjaan, ataupun sekedar menjelaskan website yang dibuat berfungsi untuk apa.
-Dalam kasusku aku menambahkan CV, siapa diriku, kontak, website ini untuk apa dan media sosial yang bisa diikuti.
+* About: Halaman ini menceritakan diri sendiri, ada banyak cara yang bisa dilakukan seperti menjelaskan pekerjaan yang dilakukan sekarang, motivasi dalam melakukan pekerjaan, ataupun sekedar menjelaskan website yang dibuat berfungsi untuk apa.
+Halaman about aku menambahkan CV, siapa diriku, kontak, website ini untuk apa dan media sosial yang bisa diikuti, halaman about bisa berubah tanpa notice tergantung dari motivasku untuk menulis bio data ku.
 
 ## Tema
 Tema dalam Static Site Generator beragam dari membuat sendiri dari awal ataupun memakai tema yang sudah dibuat oleh komunitas, pendekatan ku adalah menggunakan tema yang sudah ada karena lebih cepat dan praktis lalu tujuan utama ku membuat personal website sebagai tempat untuk menaruh tulisan bukan untuk tempat berkreasi atau mencoba berbagai fungsi.
