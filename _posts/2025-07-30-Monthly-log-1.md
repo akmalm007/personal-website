@@ -1,7 +1,7 @@
 ---
 layout: single
 category: logs
-tags: aimtraining hobby aimlab
+tags: monthly aimtraining hobby aimlab
 ---
 Saya berbahagia untuk mengumumkan bahwa saya sudah mencapai Rank Gold dan Platinum pada Benchmark Voltaic S3 Novice dan Aimlab Official Benchmark S1 Novice, saya harap dengan pencapaian ini saya semakin semangat untuk mencapai rank berikutnya.....
 
