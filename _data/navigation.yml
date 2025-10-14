@@ -10,3 +10,13 @@ main:
     url: /archives/
   # - title: "Record"
   #   url: /record/
+
+# Homelab link documentation
+homelab:
+  - title: Setup
+    children:
+      - title: "Device"
+        url: /homelab/laptop
+  - title: Server
+    children:
+      - title: "Game Server"
