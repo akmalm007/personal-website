@@ -1,4 +1,5 @@
 ---
+published: false
 category: blog
 tags: hardware linux laptop
 header:
