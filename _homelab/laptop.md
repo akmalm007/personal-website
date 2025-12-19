@@ -2,6 +2,7 @@
 title: Laptop
 permalink: /homelab/laptop
 layout: single
+published: false
 ---
 # This the setup
 ## about hte setup
