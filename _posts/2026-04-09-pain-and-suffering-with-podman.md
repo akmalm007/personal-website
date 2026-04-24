@@ -12,7 +12,7 @@ Pililhan Self Hosting Git Server tiga yaitu: [Gitlab](https://docs.gitlab.com/in
 
 # Introduction
 Instalasi Podman pada Linux lebih mudah dibandingkan Docker:
-```
+```bash
 sudo apt-get update
 sudo apt install -y podman
 ```
@@ -36,7 +36,6 @@ Tapi kesulitan itu belum selesai karena aku baru pasang container Caddy Server n
 Caddy menggunakan Caddyfile untuk mengatur bagaimana website itu disediakan mirip dengan Nginx Conf, awal mula yang membuat ku pusing adalah port dan IP. Pada dokumetansi Caddy untuk menyediakan website hanya perlu syntax seperti ini:
 
 ```nginx
-
 localhost {
     respond "Hello,World"
 }
