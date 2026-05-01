@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Akmal Maulana"
 description              : "Personal Website for showcasing my writing and project"
-url                      : "https://akmal-maulana.my.id"
+url                      : "https://akmalmaulana.net"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "akmalm007/personal-website"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -124,7 +124,7 @@ analytics:
 author:
   name             : "Akmal Maulana"
   avatar           : "/assets/images/bio/bio-photo.png"
-  bio              : "Student, Engineer, Writer, Gamer"
+  bio              : "DevOps Engineer, Writer, Gamer"
   location         : "Indonesia"
   email            : "akmalmaulana915@gmail.com"
   links:

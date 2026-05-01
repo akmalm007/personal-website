@@ -14,8 +14,8 @@ homelab:
   - title: Setup
     children:
       - title: "Device"
-        url: /homelab/laptop/
+        url: /homelab/device/
   - title: Server
     children:
       - title: "Game Server"
-        url: /homelab/game-server/
+        url: /homelab/gameserver/
