@@ -1,5 +1,5 @@
 # Building Website 
-FROM ruby:3.4.7 AS builder
+FROM docker.io/ruby:3.4.7 AS builder
 
 WORKDIR /app
 
@@ -12,9 +12,11 @@ COPY . .
 RUN JEKYLL_ENV=production bundle exec jekyll build
 
 # Serving the Website
-FROM nginx:alpine
+FROM docker.io/nginx:alpine
 
 COPY --from=builder /app/_site /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
