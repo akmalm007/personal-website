@@ -8,8 +8,8 @@ on:
 
 env:
   IMAGE_REGISTRY: forgejo.akmal-maulana.my.id
-  USER_REGISTRY: ${{ secrets.USER_SELENA }}
-  TOKEN_REGISTRY: ${{ secrets.TOKEN_SELENA }}
+  USER_REGISTRY: ${{ secrets.USER_AKMAL }}
+  TOKEN_REGISTRY: ${{ secrets.TOKEN_AKMAL }}
 
 jobs:
   Build:
@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.IMAGE_REGISTRY}}/selena/personal-website:latest
+          tags: ${{ env.IMAGE_REGISTRY}}/akmalm007/personal-website:latest
 
       - name: Deploy
         id: deployments
