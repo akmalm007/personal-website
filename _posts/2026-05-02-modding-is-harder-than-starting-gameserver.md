@@ -1,5 +1,5 @@
 ---
-date: 2026-05-08
+date: 2026-05-08 15:22:00 +0700
 title: Memulai Game Server lebih mudah dibandingkan Modding Server
 category: blog
 tags: l4d2 modding server

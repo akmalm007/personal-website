@@ -1,6 +1,6 @@
 ---
-title: Laptop
-permalink: /homelab/laptop
+title: Device i am using for Homelab and Selfhosting
+permalink: /homelab/device/
 layout: single
 published: false
 ---

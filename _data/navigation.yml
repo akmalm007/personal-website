@@ -15,7 +15,13 @@ homelab:
     children:
       - title: "Device"
         url: /homelab/device/
-  - title: Server
+  - title: Game Server
     children:
-      - title: "Game Server"
-        url: /homelab/gameserver/
+      - title: "System Design"
+        url: /homelab/system-design/
+      - title: "Why Container"
+        url: /homelab/why-container/
+      - title: "Dockerfile Explanation"
+        url: /homelab/dockerfile-explanation/
+      - title: "How to Setup"
+        url: /homelab/how-to-gameserver/
