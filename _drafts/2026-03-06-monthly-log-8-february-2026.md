@@ -1,8 +1,16 @@
 ---
-date: 2026-03-10
+date: 2026-05-10 00:02:57 +0700
 category: log
 tags: life work 
 ---
+# Why this Late?
+Aku tidak kasih diriku buat tulis blog karena sehabis pulang dari tempat magang aku langsung GYM pas waktu malamnya lalu ketika weekend tiba aku terkadang juga sibuk dengan kegiatan yang lain, ini juga salah ku sendiri karena tidak kasih struktur dan sistem yang konsisten dalam menjalankan kegiatan ku.
+
+Aku kedepannya akan hilangkan media diet sesuatu yang aku tiru dari [Roy](https://roytang.net) dan [Joel](https://joelchrono.xyz) tapi aku sadar aku bukan orang yang suka konsumsi media seperti manga, novel, maupun movie dalam reguler basis namun aku lebih senang dengan latihan baik itu Aim Training, GYM dan saat ini membangun [Homelab dan Self Hosting]({% post_url 2026-04-09-pain-and-suffering-with-podman %}).
+
+Aku akan post monthly log pada bulan bulan yang lalu dan hanya berfokus pada jurnal yang telah kutulis.
+
+# Pada bulan ini
 Januari kemarin aku merasa di puncak terbaru maka Februari cara ku untuk membuat fondasi dari sistem yang sudah ada agar tidak hancur nantinya. Walaupun ku akui jadwal dan flow ku bekerja selalu berubah setiap 1 atau 2 bulan seperti Januari kemarin aku menambah GYM di jadwal ku sehingga waktu belajar dan blogging menjadi berkurang. Aku akan coba luangkan waktu ketika weekend maupun ketika tidak ada bekerja untuk blogging.
 
 # Minggu-1
@@ -14,7 +22,7 @@ Januari kemarin aku merasa di puncak terbaru maka Februari cara ku untuk membuat
 - Terakhir di minggu aku mencoba opencode yaitu coding assistant tools di terminal karena saran dari teman magang karena sulitnya membuat konteks ke chatbot biasa di web jika tidak tahu di directory isinya apa saja, aku akan tetap anggap ini sebagai chatbot dan tidak akan chatbot mengerjakan tugas ku [karena tidak akan kubiarkan chatbot memakan makananku](https://pluralistic.net/2026/01/07/delicious-pizza/).
 
 # Minggu-2
-- Aku awali minggu ini dengan menonton [Super Bowl 60](https://youtu.be/ksG9O8PHXbI?si=2aMCjhC-4OQwRP7N) dan melihat Seahawk menghancurkan Patriot, tidak terjadi blow out yang diharapkan namun setiap usaha yang dilakukan oleh offense dari Patriot berhasil diredam oleh Dark Side milik Seahwak. Offense mereka sendiri baru berhasil score touch down saat Q4 dan match ini dimulai sekitar jam 07.30 WIB saat aku sedang commute ke Kantor. Dan setelah sampai aku tetap lanjut menonton sampai akhir match.
+- Aku awali minggu ini dengan menonton [Super Bowl 60](https://youtu.be/ksG9O8PHXbI?si=2aMCjhC-4OQwRP7N) dan melihat Seahawk menghancurkan Patriot, sayangnya tidak terjadi blow out yang diharapkan namun setiap usaha yang dilakukan oleh offense dari Patriot berhasil diredam oleh Dark Side milik Seahwak. Offense mereka sendiri baru berhasil touch down saat Q4 dan match ini dimulai sekitar jam 07.30 WIB saat aku sedang commute ke Kantor. Dan setelah sampai aku tetap lanjut menonton sampai akhir match.
 - Deployment sempat terjadi error pada aplikasi frontend yaitu aplikasi yang dijalankan berat untuk server sehingga terjadi overload ini terjadi karena Server Side Rendering dibebankan **SEMUANYA** pada server sehingga server melambat sampai harus restart ulang kembali dan menghapus session sebelumnya. 
 
 
@@ -37,6 +45,10 @@ Januari kemarin aku merasa di puncak terbaru maka Februari cara ku untuk membuat
 - Terakhir aku tutup minggu ini dengan bertemu dengan teman main di preksu Depok, terakhir kami bertemu sekitar 1 tahun yang lalu di KFC. Karena bosan dengan ayam cepat saji maka kami berpindah menjadi ayam geprek.
 
 # Minggu-3
+- Pada hari minggu ada kerja bakti dan workout labor itu berbeda dengan mengangkat beban, karena labor itu memperlukan tenaga seperlunya lalu stamina yang kuat agar bisa bekerja dalam kurun waktu satu sampai dua jam. Stamina ini yang akan kuperlukan nanti ketika [Idul Adha]({% post_url 2025-10-23-statistik-pemotongan-hewan-kurban-idul-adha-1446H %}).
+- Minggu ini juga aku mulai mencoba CI CD pada instalasi Gitea di local laptop ku untuk mempermudah nanti dalam deployment aplikasi, rencananya adalah laptop ku menjadi server git serta runnernya lalu nanti teman kerja ku akan push ke laptop ini pada network kantor dan proses akan dijalankan oleh pipeline yang sudah disiapkan. Sayangnya workflows ini tidak bekerja mulus karena teman ku sudah nyaman dengan push di Gitlab dan membuat dia push ke dalam personal Gitea ku juga terlihat tidak baik karena aku bisa aja sisipin modifkasi tertentu. Ini bukan berarti aku akan berbuat jahat namun harusnya ada implementasi yang lebih baik.
+- Terakhir aku juga melakukan [reset pada ssd dan router]({% post_url 2026-02-15-reset-router-dan-ssd %}) karena ini kupakai untuk hal lain seperti memasang kabel LAN serta memanfaatkan storage yang tidak terpakai nantinya.
+- Minggu ini fokus ku selama Magang adalah mencoba integrasikan CI CD Workflows dengan VPS nantinya sehingga aku bisa deploy aplikasi dengan cepat dan tanpa perlu `ssh` ke server karena itu menyebalkan.
+
 # Minggu-4
-# Media Diet
-# Looking Forward
+
