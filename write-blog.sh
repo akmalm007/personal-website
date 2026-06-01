@@ -18,7 +18,7 @@ echo "Create file completed: _drafts/$TODAY_DATE-$FILENAME.md"
 
 read -p "Enter blog title: " BLOG_TITLE
 read -p "Enter blog category: " BLOG_CATEGORY
-read -p "Enter blog category: " BLOG_TAGS
+read -p "Enter blog tags: " BLOG_TAGS
 
 cat << EOF > _drafts/$TODAY_DATE-$FILENAME.md
 ---
@@ -37,12 +37,10 @@ read -p "Any image you want to add ? " CHOICE
 
 if [ "${CHOICE,,}" = "yes" ]; then
     mkdir -p assets/images/blog/$TODAY_DATE-$FILENAME
+    echo "Directory has been created"
+    ls assets/images/blog/$TODAY_DATE-$FILENAME
+
 fi
-
-echo "Directory has been created"
-ls assets/images/blog/$TODAY_DATE-$FILENAME
-
-echo "Front matter have been updated"
 
 cat << EOF > _drafts/$TODAY_DATE-$FILENAME.md
 ---
@@ -57,4 +55,5 @@ galley:
 ---
 EOF
 
+echo "Front matter have been updated"
 cat < _drafts/$TODAY_DATE-$FILENAME.md
