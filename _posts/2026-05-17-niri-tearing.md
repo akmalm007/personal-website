@@ -3,7 +3,7 @@ date: 2026-05-17 13:48:04 +0700
 title: Niri support for Screen Tearing
 excerpt: "Niri please add support for Tearing"
 category: blog
-tags: compositor niri l4d2
+tags: compositor niri l4d2 linux
 header:
      image: /assets/images/blog/2026-05-17-niri-tearing/niri-tearing.png
      teaser: /assets/images/blog/2026-05-17-niri-tearing/niri-tearing.png
