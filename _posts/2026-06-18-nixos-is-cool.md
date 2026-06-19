@@ -8,9 +8,9 @@ In the past when I am still exploring about Linux during my college internship I
 
 I tried to install once in VM and is alright, another thing with NixOS you can install their [package manager](https://nixos.org/download/) everywhere like MacOS, Windows, and Linux. I have tried NixOS package manager once in Alibaba VPS, at that time I want to install Neovim newest version in the VPS but the package manager *yum* is old and only provided 6.0 version from what I remember.
 
-I have tried to build from source the Neovim in the VPS with 1 vcore but that didn't work and then I remember NixOS package manager, I install it and it give me newest version of Neovim. My purpose to install Neovim in VPS is to use Neovim plugins like LSP, treesitter and so on but that is overkill for VPS purpose and Vim exist.
+I have tried to build from source in VPS with 1 vcore but that didn't work and then I remember NixOS package manager, I install it and it give me newest version of Neovim. My purpose to install Neovim in VPS is to use Neovim plugins like LSP, treesitter and so on but that is overkill for VPS purpose and Vim exist.
 
-I encouter NixOS again from Youtube channel [@tony-btw](https://www.youtube.com/@tony-btw) he created Linux tutorial videos for dekstop user like compositor and install various Linux and BSD system, from his channel I know about wayland compositor [Niri]({% post_url 2026-05-17-niri-tearing %}) and have been daily driving it. 
+I encouter NixOS again from Youtube channel [@tony-btw](https://www.youtube.com/@tony-btw) he created Linux tutorial videos for dekstop user like compositor setup and install various Linux and BSD system, from his channel I know about wayland compositor [Niri]({% post_url 2026-05-17-niri-tearing %}) and have been daily driving it. 
 
 In his recent videos he make [tier list for Linux and BSD system](https://youtu.be/7M00ZDCjAA8?si=ETxMkdsacNl4SxcT&t=236) and ranking NixOS as S tier for operator friendly system. For me the thing that make NixOS appealing again is declarative approach system, in distro like Arch or Debian if you want to install packages you do it *imperatively* meaning you make change in your system bit by bit. Like example I want to install qemu I have to install with package manager like Pacman or APT:
 ```sh
@@ -30,7 +30,7 @@ The philosopy about declarative approach is something I have read in Kubernetes 
 
 I have installed NixOS in my old laptop that previously used Debian Sid, for starter I am using Tony tutorial video to setup NixOS with [Flake](https://wiki.nixos.org/wiki/Flakes) and my goal is to reproduce my current system in Arch with NixOS configuration file and make repository for version control.
 
-In the past few days I have been trying to learn Kubernetes and when I try to install *kind* in my old laptop it refused because Flake detect I haven't version control my Niri config file, since I have reproduce my system in NixOS I also want to have second version of NixOS for server use case with minimal packages. 
+In the past few days I have been trying to learn Kubernetes and when I try to install *kind* in my old laptop it refused because Flake detect I haven't version control my Niri config file, since I have reproduce my system in NixOS I am thinking to have second version of NixOS for server use case with minimal packages. 
 
-Then I make new directory with Flake and Nix file for server setup and only install necessary packages like SSH, Container Runtime, and Kubernetes. When I am rebuild the system it remove my Niri setup and successfully installed container runtime and kubernetes, at that moment I am blown away how easily to switch between two different system with ease and I am considering to switching from Arch to NixOS in future.
+Then I make new directory with Flake and Nix configuration file for server setup and only install necessary packages like SSH, Container Runtime, and Kubernetes. When I am rebuild the system it remove my Niri setup and successfully installed container runtime and kubernetes, at that moment I am blown away how easily to switch between two different system with ease and I am considering to switching from Arch to NixOS in future.
 
