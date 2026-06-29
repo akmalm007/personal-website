@@ -7,4 +7,5 @@ header:
    image: /assets/images/blog/2026-06-02-private-vpn/how-vpn-work.png
    teaser: /assets/images/blog/2026-06-02-private-vpn/how-vpn-work.png
 ---
+Around this weeks I ask 
 
