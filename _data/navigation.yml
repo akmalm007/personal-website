@@ -11,10 +11,16 @@ main:
 
 # Homelab link documentation
 homelab:
-  - title: Setup
+  - title: Setup and Roadmap
     children:
       - title: "Device"
         url: /homelab/device/
+      - title: "Network Topology"
+        url: /homelab/network-topology/
+      - title: "Application"
+        url: /homelab/application/
+      - title: "Roadmap"
+        url: /homelab/roadmap/
   - title: Game Server
     children:
       - title: "System Design"
