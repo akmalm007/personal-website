@@ -6,6 +6,8 @@ main:
     url: /archives/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Notes"
+    url: /notes/
   # - title: "Record"
   #   url: /record/
 
