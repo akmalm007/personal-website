@@ -36,27 +36,15 @@ jobs:
       - name: Deploy
         id: deployments
         env:
-          KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
-          KUBE_CA_CERT: ${{ secrets.KUBE_CA_CERT }}
-          KUBE_API_SERVER: ${{ secrets.KUBE_API_SERVER }}
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY}}
+          USER: ${{ secrets.VPS_USER}}
+          IP: ${{ secrets.VPS_IP}}
         run: |
-          KUBECTL_VERSION="v1.36.2"
-          curl --connect-timeout 10 --max-time 60 --retry 3 -sLO \
-            "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
-          chmod +x kubectl
-          mv kubectl /usr/local/bin/kubectl
+          # Setup SSH
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$IP" >> ~/.ssh/known_hosts
 
-          # Build kubeconfig from secrets - no SSH, no key files, just an API call
-          echo "$KUBE_CA_CERT" | base64 -d > /tmp/ca.crt
-          kubectl config set-cluster k3s \
-            --server="$KUBE_API_SERVER" \
-            --certificate-authority=/tmp/ca.crt \
-            --embed-certs=true
-          kubectl config set-credentials forgejo-deploy --token="$KUBE_TOKEN"
-          kubectl config set-context deploy \
-            --cluster=k3s \
-            --user=forgejo-deploy \
-            --namespace=production
-          kubectl config use-context deploy
-
-          kubectl rollout history deployment/personal-website
+          # Run Deployment
+          ssh -o BatchMode=yes "$USER@$IP
