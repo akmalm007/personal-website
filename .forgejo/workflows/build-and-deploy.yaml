@@ -47,4 +47,4 @@ jobs:
           ssh-keyscan -H "$IP" >> ~/.ssh/known_hosts
 
           # Run Deployment
-          ssh -o BatchMode=yes "$USER@$IP
+          ssh $USER@$IP
