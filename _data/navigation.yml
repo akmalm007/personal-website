@@ -4,7 +4,7 @@ main:
     url: /about/
   - title: "Index"
     url: /archives/
-  - title: "Portfolio"
+  - title: "Project"
     url: /portfolio/
   - title: "Notes"
     url: /notes/
