@@ -22,23 +22,15 @@ I have one instance that I change the cashier internet from Wifi to LAN cable th
 
 It also part of my fault since I failed to notice her that I change the connection or in this instance the "system" their used to working, I guess we are really creature of habit but also that's why if you make change to system someone might notice and complaining it doesn't work like how it used to be.
 
-# The Annoying Part
+# The Least Pleasant Part
 After the excitement of initial opening concluded the boring came in, I already have this feeling in my mind that the only time I will "work" is when there is disaster. I know I am being exaggerated but my hunch was right from the evidence of the initial opening I only called when there is trouble either the internet not connected to cashier or the electricity is down.
 
-I also got told by my co worker that the manager doesn't knew what I am capable of, even the cafe owner said that I am not having any initiative or just silence. To some extend even one of the manager try to make me to be more proactive or try to circle around in cafe to check the system just to make sure "I am working".
-
-During briefing I also got told that I am supposed to able job my co worker can which is electricity installation or going up stair to install cable, the owner said I am supposed to be able make graphics design using chatbot. Is fine from them to expect more from their worker but I don't know what the duck they want from me. 
-
-My senior said to me that I can do project or something else during work hours and then time to time check in the networking if working, I am fine doing that but when I want to do graphics design the owner didn't give direction on what they want nor didn't give material to working on like foods or drink photos. Well they used chatbot for most of the design work so that is out of window.
-
-I am not saying that my bosses is bad peoples, they care about their worker and want them give their best for themselves and for the cafe but I just don't know what they want so I am just do nothing most of the time and from time to time helping the waiters cleaning table or helping customer if I got called. If I really want to be more "productive" then I am not gonna use chatbot for design because I will learn nothing by using that and if I am try to install electricity without proper equipment and knowledge it will be dangerous.
+I also have trouble understanding my manager or my owner need so most of the time I just operating Videotron from the backstage or helping Soundman setup. From time to time I also helping my co worker cleaning table in the end of shift and helping customer if I got called. I realize I didn't use my time wisely during works in Cafe but I also struggle to understand what my managers want from me.
 
 # Reflection
 The cafe itself is good place to work, is always crowded and also have live performance everyday so you won't became bored, the co worker is good peoples and is nice working with them. But my jobs is boring and I have no challenge. Learning electricity will be good to have for extending my repertoire but I don't where to start or it will take much longer to do task.
 
-I am fine with senior or leader that give me direction to working but I don't like where someone try to micromanaging if I was deadwood worker who don't know what to do. I knew what I am doing if I was given freedom to explore and I can improve my workplace. 
-
-If I was pointed to be cook, bartender/barista, or waiters even band members I will knew how things should be or what I am supposed to be improving to increase customer satisfaction for the cafe. But in the end I am just background character who just make sure that the internet isn't dead.
+If I were pointed to be cook, bartender/barista, or waiters even band members I will knew how things should be or what I am supposed to be improving to increase customer satisfaction for the cafe. But in the end I am just background character who just make sure that the internet isn't dead.
 
 If I was dead wood who just want job without doing much and got paid then this job is for me, but I am craving job that make my head hurt while thinking about the solution but this place didn't give me that *yet* because either I can't convince my bosses about my skills set or they don't know what I can. 
 
