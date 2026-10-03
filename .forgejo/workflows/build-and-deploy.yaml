@@ -40,7 +40,7 @@ jobs:
           tags: ${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.sha_short }}
 
       - name: Checkout config repo
-        uses: https://github.com/actions/checkout@v3
+        uses: https://code.forgejo.org/actions/checkout@v4
         with:
           repository: ${{ env.CONFIG_REPO }}
           ref: main
@@ -49,8 +49,11 @@ jobs:
 
       - name: Install kustomize
         run: |
-          curl -sfL https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh \
-            | bash -s -- 5.4.3 /usr/local/bin
+          curl -sfL -o kustomize.tar.gz \
+            https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv5.4.3/kustomize_v5.4.3_linux_amd64.tar.gz
+          tar -xzf kustomize.tar.gz
+          sudo mv kustomize /usr/local/bin/
+          kustomize version
 
       - name: Bump image tag
         working-directory: homelab/${{ env.CONFIG_PATH }}
