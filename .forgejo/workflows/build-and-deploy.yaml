@@ -10,13 +10,20 @@ env:
   IMAGE_REGISTRY: git.akmalmaulana.net
   USER_REGISTRY: ${{ secrets.USER_AKMAL }}
   TOKEN_REGISTRY: ${{ secrets.TOKEN_AKMAL }}
+  IMAGE_NAME: git.akmalmaulana.net/akmalm007/blog
+  CONFIG_REPO: akmalm007/homelab
+  CONFIG_PATH: k8s-cluster-config/apps/blog/overlays/production
 
 jobs:
-  Build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout blog code
         uses: https://github.com/actions/checkout@v3
+
+      - name: Set short SHA
+        id: vars
+        run: echo "sha_short=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Log in to Registry
         uses: https://github.com/docker/login-action@v2
@@ -25,26 +32,36 @@ jobs:
           password: ${{ env.TOKEN_REGISTRY }}
           registry: ${{ env.IMAGE_REGISTRY }}
 
-      - name: Build Image
-        id: build-image
+      - name: Build and push image
         uses: https://github.com/docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ${{ env.IMAGE_REGISTRY}}/akmalm007/blog:latest
+          tags: ${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.sha_short }}
 
-      - name: Deploy
-        id: deployments
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY}}
-          USER: ${{ secrets.VPS_USER}}
-          IP: ${{ secrets.VPS_IP}}
+      - name: Checkout config repo
+        uses: https://github.com/actions/checkout@v3
+        with:
+          repository: ${{ env.CONFIG_REPO }}
+          token: ${{ env.TOKEN_REGISTRY }}
+          path: homelab
+
+      - name: Install kustomize
         run: |
-          # Setup SSH
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H "$IP" >> ~/.ssh/known_hosts
+          curl -sfL https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh \
+            | bash -s -- 5.4.3 /usr/local/bin
 
-          # Run Deployment
-          ssh $USER@$IP
+      - name: Bump image tag
+        working-directory: homelab/${{ env.CONFIG_PATH }}
+        run: |
+          kustomize edit set image ${{ env.IMAGE_NAME }}=${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.sha_short }}
+
+      - name: Commit and push
+        working-directory: homelab
+        run: |
+          git config user.name "forgejo-actions"
+          git config user.email "actions@akmalmaulana.net"
+          git add ${{ env.CONFIG_PATH }}/kustomization.yaml
+          git diff --cached --quiet && echo "No changes, skipping" && exit 0
+          git commit -m "deploy(blog): ${{ steps.vars.outputs.sha_short }}"
+          git push origin main
