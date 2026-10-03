@@ -43,6 +43,7 @@ jobs:
         uses: https://github.com/actions/checkout@v3
         with:
           repository: ${{ env.CONFIG_REPO }}
+          ref: main
           token: ${{ env.TOKEN_REGISTRY }}
           path: homelab
 
